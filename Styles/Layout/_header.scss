@@ -1,0 +1,15 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    li {
+        margin: 0 34px;
+        color: $text-color;
+    }
+}
