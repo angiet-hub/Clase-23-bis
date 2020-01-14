@@ -5,7 +5,11 @@
 
 @import 'layout/header';
 @import 'layout/main';
+@import 'layout/section';
+@import 'layout/footer';
 
 body {
     font-family: $main-font;
+    background-color: $secundary-color;
+    margin: 0;
 }

@@ -3,16 +3,27 @@ header {
     top: 0;
     width: 100%;
     z-index: 10;
-    height: 53px;
     background-color: $main-color;
+    left:0;
+
 
     ul {
         display: flex;
         justify-content: flex-end;
+        
+        @media(max-width: 595px) {
+            flex-direction: column;
+            height: 126px;
+        }
     }
 
     li {
         margin: 0 34px;
         color: $text-color;
+        
+        @media(max-width: 802px) {
+        margin:0 15px;
+        }
+  
     }
 }

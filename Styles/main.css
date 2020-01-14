@@ -6,11 +6,23 @@ li {
   height: 400px;
   margin: 24px;
   position: relative;
-  background-color: #fcfcfd; }
+  background-color: #fcfcfd;
+  box-shadow: 0px 3px 47px -13px black; }
+  @media (max-width: 1367px) {
+    .card {
+      width: 33%; } }
+  @media (max-width: 877px) {
+    .card {
+      width: 41%; } }
+  @media (max-width: 679px) {
+    .card {
+      width: 55%; } }
   .card .price {
     position: absolute;
     right: 17px;
-    top: 22px; }
+    top: 22px;
+    font-weight: bolder;
+    font-size: 18px; }
   .card img {
     border-radius: 50%;
     width: 42%;
@@ -21,42 +33,144 @@ li {
     text-align: center;
     position: relative;
     top: 183px; }
-  .card .skills span {
-    border: 1px solid black;
-    border-radius: 31px;
-    padding: 2px; }
+  .card .skills {
+    width: 100%;
+    left: calc(50% - 50%);
+    top: 281px;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly; }
+    .card .skills :nth-child(4) {
+      background-color: #68b4e4; }
+    .card .skills span {
+      border: 2px solid #d6d6d8;
+      border-radius: 31px;
+      padding: 11px;
+      font-size: 13px; }
   .card .job {
     position: absolute;
     width: 50%;
     left: calc(50% - 25%);
     top: 229px;
-    text-align: center; }
+    text-align: center;
+    color: #b4be97;
+    font-size: 14px; }
   .card .place-job {
-    position: absolute; }
+    position: absolute;
+    width: 50%;
+    left: calc(50% - 25%);
+    top: 254px;
+    text-align: center;
+    color: #abd0d7;
+    font-weight: bold; }
+  .card .info {
+    position: absolute;
+    bottom: 38px;
+    font-size: 13px;
+    width: 80%;
+    left: calc(50% - 40%);
+    color: #9e8283; }
+    @media (max-width: 919px) {
+      .card .info {
+        display: none; } }
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
-  height: 53px;
-  background-color: #fcfcfd; }
+  background-color: #fcfcfd;
+  left: 0; }
   header ul {
     display: flex;
     justify-content: flex-end; }
+    @media (max-width: 595px) {
+      header ul {
+        flex-direction: column;
+        height: 126px; } }
   header li {
     margin: 0 34px;
     color: #b4be97; }
+    @media (max-width: 802px) {
+      header li {
+        margin: 0 15px; } }
 
-main {
+.cards {
   display: flex;
   background-color: #d6d6d8;
   flex-wrap: wrap;
   width: 89%;
   margin: 0 auto;
-  margin-top: 83px; }
+  margin-top: 83px;
+  justify-content: space-around; }
+  @media (max-width: 1036px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+      display: flex; } }
+
+.section-header {
+  width: 100%;
+  height: 72px;
+  margin-top: 53px;
+  line-height: 68px;
+  background-color: #fcfcfd;
+  border: 1px solid #d6d6d8; }
+  .section-header span {
+    padding-left: 70px; }
+  @media (max-width: 606px) {
+    .section-header {
+      display: none; } }
+
+.section-footer {
+  background-color: #fcfcfd;
+  border: 1px solid #d6d6d8;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: end; }
+  @media (max-width: 655px) {
+    .section-footer {
+      display: none; } }
+  .section-footer .pages {
+    padding-right: 133px;
+    margin-top: 15px; }
+    .section-footer .pages :nth-child(1) {
+      background-color: #68b4e4; }
+  .section-footer .page {
+    margin: 0 7px;
+    margin: 10px 8px 10px;
+    width: 20px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0 5px;
+    text-align: center; }
+
+footer {
+  width: 100%;
+  background-color: #68b4e4; }
+  footer .name {
+    font-size: 31px; }
+  footer .list {
+    display: flex;
+    justify-content: space-evenly; }
+    @media (max-width: 845px) {
+      footer .list {
+        flex-direction: column;
+        align-items: center; } }
+    footer .list .header-list {
+      color: #fcfcfd;
+      font-weight: bold;
+      font-size: 17px; }
+    footer .list ul {
+      line-height: 55px;
+      color: #d6d6d8;
+      font-size: 15px; }
 
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  background-color: #d6d6d8;
+  margin: 0; }
 
 /*# sourceMappingURL=main.css.map */
