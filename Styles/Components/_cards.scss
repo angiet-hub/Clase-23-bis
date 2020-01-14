@@ -1,0 +1,47 @@
+.card {
+    width: 22%;
+    height: 400px;
+    margin: 24px;
+    position: relative;
+    background-color: $main-color;
+
+    .price {
+        position: absolute;
+        right: 17px;
+        top: 22px;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 42%;
+        left: calc(50% - 21%);
+        position: absolute;
+        top: 50px;
+    }
+
+    .title {
+        text-align: center;
+        position: relative;
+        top: 183px;
+    }
+
+    .skills {
+        span {
+            border: 1px solid black;
+            border-radius: 31px;
+            padding: 2px;
+        }
+    }
+
+    .job {
+        position: absolute;
+        width: 50%;
+        left: calc(50% - 25%);
+        top: 229px;
+        text-align: center;
+    }
+
+    .place-job {
+        position: absolute;
+    }
+}

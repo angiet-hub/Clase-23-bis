@@ -2,6 +2,9 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
+    height: 53px;
+    background-color: $main-color;
 
     ul {
         display: flex;

@@ -1,8 +1,10 @@
 @import 'abstract/variables';
 
 @import 'components/list';
+@import 'components/cards';
 
 @import 'layout/header';
+@import 'layout/main';
 
 body {
     font-family: $main-font;

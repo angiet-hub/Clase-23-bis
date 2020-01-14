@@ -1,16 +1,60 @@
 li {
   list-style: none; }
 
+.card {
+  width: 22%;
+  height: 400px;
+  margin: 24px;
+  position: relative;
+  background-color: #fcfcfd; }
+  .card .price {
+    position: absolute;
+    right: 17px;
+    top: 22px; }
+  .card img {
+    border-radius: 50%;
+    width: 42%;
+    left: calc(50% - 21%);
+    position: absolute;
+    top: 50px; }
+  .card .title {
+    text-align: center;
+    position: relative;
+    top: 183px; }
+  .card .skills span {
+    border: 1px solid black;
+    border-radius: 31px;
+    padding: 2px; }
+  .card .job {
+    position: absolute;
+    width: 50%;
+    left: calc(50% - 25%);
+    top: 229px;
+    text-align: center; }
+  .card .place-job {
+    position: absolute; }
+
 header {
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 10;
+  height: 53px;
+  background-color: #fcfcfd; }
   header ul {
     display: flex;
     justify-content: flex-end; }
   header li {
     margin: 0 34px;
     color: #b4be97; }
+
+main {
+  display: flex;
+  background-color: #d6d6d8;
+  flex-wrap: wrap;
+  width: 89%;
+  margin: 0 auto;
+  margin-top: 83px; }
 
 body {
   font-family: "Roboto", sans-serif; }
